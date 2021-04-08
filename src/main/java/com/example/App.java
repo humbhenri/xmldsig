@@ -6,7 +6,7 @@ import java.security.KeyPair;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        if (args.length != 1 || args.length != 3) {
+        if (args.length != 1 && args.length != 3) {
             System.out.println("Usage: xmldsig INPUT\nxmldsig INPUT PRIVATE_KEY PUBLIC_KEY");
             return;
         }
